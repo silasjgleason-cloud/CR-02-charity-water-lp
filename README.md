@@ -1,3 +1,4 @@
+Deployed via GitHub Pages.
 # Week 2 Project: Build the charity: water Landing Page
 To get started, create a new Codespace from this repo.
 
