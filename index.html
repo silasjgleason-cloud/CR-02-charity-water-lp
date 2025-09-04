@@ -1,47 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>charity: water — From Takeout to Transformation</title>
+
+  <!-- Proxima Nova fallback: Montserrat -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark"></span>
+      <span class="wordmark">charity: water</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
     <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
-
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+      <!-- Left: stats -->
+      <aside class="stats">
+        <div class="stat">
+          <div class="stat__big">771 Million</div>
+          <div class="stat__small">people lack clean water</div>
         </div>
-    </section>
+        <div class="stat">
+          <div class="stat__big">1 in 10</div>
+          <div class="stat__small">people worldwide</div>
+        </div>
+        <div class="stat">
+          <div class="stat__big">100%</div>
+          <div class="stat__small">of public donations fund water projects</div>
+        </div>
+      </aside>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
+      <!-- Center: message -->
+      <div class="message">
+        <h1>From Takeout to <br>Transformation</h1>
+        <p class="sub">$20 provides clean water for one person for 365 days</p>
+
+        <div class="impact-pill">$20 → 1 person / 1 year of clean water</div>
+
+        <a class="cta" href="https://www.charitywater.org/donate" target="_blank" rel="noopener noreferrer">
+  Skip Takeout. Give Water.
+</a>
+
+
+
+        <div class="trust-row">
+          <span>Apple Pay</span><span>•</span>
+          <span>Venmo</span><span>•</span>
+          <span>Card</span><span>•</span>
+          <span>Secure checkout</span>
+        </div>
+      </div>
+
+      <!-- Right: hero image -->
+      <figure class="hero-media">
+        <img src="img/hero.jpg" alt="Smiling woman filling yellow jerry cans at a community water pump." />
+        <figcaption>Small choices make big change, your gift has a clear, measurable result.</figcaption>
+      </figure>
     </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built for Week 2 • Deployed on GitHub Pages</p>
+  </footer>
 </body>
 </html>
