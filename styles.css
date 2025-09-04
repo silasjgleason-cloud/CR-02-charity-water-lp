@@ -115,3 +115,59 @@ body{
   .hiw-grid{ grid-template-columns: 1fr; }
   .impact-pill{ display:block; width:max-content; }
 }
+/* --- Focus ring so keyboard users can see where they are --- */
+a:focus-visible, button:focus-visible {
+  outline: 3px solid #222;
+  outline-offset: 3px;
+  border-radius: 12px;
+}
+
+/* --- Slight “lift” on cards for visual delight --- */
+.hiw-card { transition: transform .12s ease, box-shadow .2s ease; }
+.hiw-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(0,0,0,.12);
+}
+/* --- CTA hover & active: a tiny lift and deeper shadow --- */
+.cta {
+  transition: transform .08s ease, box-shadow .2s ease, filter .2s ease;
+}
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0,0,0,.12);
+  filter: brightness(1.02); /* subtle pop */
+}
+.cta:active {
+  transform: translateY(0) scale(.99);
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);
+}
+
+/* --- Respect users who prefer reduced motion --- */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+/* --- Wider screen polish: prevent text from stretching too far --- */
+@media (min-width: 1200px){
+  .hero, .hiw, .final-cta {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* --- Mobile polish: increase body text size for readability --- */
+@media (max-width: 700px){
+  body {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .message h1 {
+    font-size: clamp(24px, 7vw, 34px);
+  }
+  .sub {
+    font-size: 16px;
+  }
+}
